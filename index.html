@@ -5,8 +5,158 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+     <style>
+            * {
+                
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            } 
+
+          
+            .nav {
+                position: sticky;
+                top:0;
+                display: flex;
+                justify-content: space-between;
+                width: 100vw;
+                height: 50px;
+                background: rgba(136, 134, 134,.6);
+                border: 1px solid transparent;
+            }
+
+            .nav .box {
+                width: 50px;
+                height: 50px;
+                /* background: red; */
+            }
+
+            .nav .box2 {
+                width: 400px;
+                height: 50px;         
+            }
+             .nav ul {
+                display: flex;
+                width: 100%;
+            
+                /* background: rebeccapurple; */
+                margin: 10px auto;
+             }
+
+             .nav ul li {
+                flex: 0 0 80px;
+                width: 80px;
+                height: 30px;
+                border: 1px solid rgb(73, 73, 73);
+                margin-left: 10px;
+                text-align: center;
+                line-height: 30px;
+                border-radius: 10px;
+               
+               
+             }
+
+             .nav ul li:hover {
+                background: rgb(108, 107, 106);
+                transform: scale(1.1);
+             }
+
+             .nav ul li a:hover {
+                color: azure;
+             }
+             .nav ul li a {
+                text-decoration: none;
+                color: black;
+             }
+
+             #contaner {
+                 width: 100vw;
+                height: 400px;
+                background: linear-gradient(rgb(39, 38, 38), rgb(155, 153, 153));
+                border: 1px solid red;
+             }
+
+
+             #person {
+                width: 100vw;
+                height: 250px;
+                background: burlywood;
+              
+               
+             }
+
+             #skill {
+
+                width: 100vw;
+                height: 250px;
+                background: rgb(17, 82, 117);
+             }
+
+             #porject {
+
+                width: 100vw;
+                height: 350px;
+                background: rgb(176, 18, 84);
+
+             }
+     </style>
 </head>
 <body>
-    <h2>这是我的个人简介</h2>
+    <main>
+           <div class="nav">
+                  <div class="box"></div>
+                  <div class="box2">
+                 <ul>
+                 <li><a href="">首页</a></li>
+                 <li><a href="#person">个人介绍</a></li>
+                 <li><a href="#skill">个人技能</a></li>
+                 <li><a href="#porject">个人项目</a></li>
+             
+                </ul>
+                  </div>
+              
+
+           </div>
+
+            <!-- 主区域 -->
+            <div id="contaner">
+                 
+                <div class="wrap">
+                    <div class="cube">
+                        <div class="outer-front"></div>
+                        <div class="outer-back"></div>
+                        <div class="outer-left"></div>
+                        <div class="outer-right"></div>
+                        <div class="outer-top"></div>
+                        <div class="outer-bottom"></div>
+                
+                        <span class="inner-front"></span>
+                        <span class="inner-back"></span>
+                        <span class="inner-left"></span>
+                        <span class="inner-right"></span>
+                        <span class="inner-top"></span>
+                        <span class="inner-bottom"></span>
+                    </div>
+                </div>
+
+ 
+
+
+
+            </div>
+
+
+              <div id="person">
+                  <p>个人介绍</p>
+              </div>
+            <div id="skill">
+                <p>个人技能</p>
+            </div>
+
+            <div id="porject">
+                 <p>个人项目</p>
+            </div>
+    </main>
 </body>
 </html>
