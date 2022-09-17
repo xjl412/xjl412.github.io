@@ -84,13 +84,10 @@
      position: absolute;    
   }
   .cube span:nth-child(even){
-    /* background: url('2.jpg') no-repeat;  
-    background-size: contain; */
+   
    background: rgba(234, 231, 236,.5);
   }
 .cube span:nth-child(odd){
-    /* background: url('3.jpg') no-repeat; 
-     background-size: contain; */
      background: rgba(234, 231, 236,.5);
 }
 .cube .inner-front{
